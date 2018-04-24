@@ -21,7 +21,7 @@ public class Car {
 		this.speed = speed;
 	}
 	
-	//Constructor(생성자) : 메소드명이 클라스 이름과 같다. 반환형이 같다.
+	//Constructor(생성자) : 메소드명이 클라스 이름과 같다. 반환형이 없다.
 	public Car(String color, int speed){
 		this.color=color;	//this.color: class의 field color, color: 이 method의 매개변수
 		this.speed=speed;

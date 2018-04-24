@@ -11,6 +11,7 @@ public class TestPolygon {
 		rec.height = 2.0;
 		rec.width = 3.0;
 		System.out.println(rec.area());
+		
 
 	}
 

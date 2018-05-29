@@ -4,6 +4,10 @@ import javax.swing.*;
 
 public class Calculator extends JFrame implements ActionListener {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//Field
 	//버튼: 0~9, C, +, =
 	private JButton b0 = new JButton("0");
@@ -20,7 +24,7 @@ public class Calculator extends JFrame implements ActionListener {
 	private JButton bp = new JButton("+");
 	private JButton be = new JButton("=");
 	//텍스트필드
-	private JTextField tf = new JTextField(20);
+	private JTextField tf = new JTextField(10);
 	//Panel
 	private JPanel p1 = new JPanel();
 	private JPanel p2 = new JPanel();
@@ -34,7 +38,7 @@ public class Calculator extends JFrame implements ActionListener {
 	//Constructor
 	public Calculator() {
 		//프레임 생성
-		setSize(300,300);
+		setSize(200,300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Calculator");
 		
@@ -43,18 +47,17 @@ public class Calculator extends JFrame implements ActionListener {
 		
 		//패널에 컴포넌트 추가
 		//9 8 7
-		p1.add(b9);
-		p1.add(b8);
 		p1.add(b7);
+		p1.add(b8);
+		p1.add(b9);
 		//6 5 4
-		p2.add(b6);
-		p2.add(b5);
 		p2.add(b4);
-		//3 2 1 0
-		p3.add(b3);
-		p3.add(b2);
+		p2.add(b5);
+		p2.add(b6);
+		//3 2 1
 		p3.add(b1);
-		p3.add(b0);
+		p3.add(b2);
+		p3.add(b3);
 		//C + =
 		p4.add(bc);
 		p4.add(bp);
@@ -65,6 +68,7 @@ public class Calculator extends JFrame implements ActionListener {
 		add(p1);
 		add(p2);
 		add(p3);
+		add(b0);
 		add(p4);
 		
 		//이벤트리스너 객체 등록

@@ -19,4 +19,5 @@
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="MyCalculator"/>
 <fullyQualifiedTypeName name="MyCalculator1.MyCalculatorActionListener"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
 </qualifiedTypeNameHistroy>
